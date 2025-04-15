@@ -4,10 +4,26 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+		label {
+			margin-bottom:30px;
+		}
+		input{
+			margin-left:60px;
+			margin-bottom:10px
+		}
+	</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+	<h2>Feedback Form</h2>
+	<form>
+		<label>Name</label><input type="text" id="name" minlength="3" maxlength="50" required><br>
+		<label>Portfolio</label><input type="URL" id="portfolio" required><br>
+		<label>Favorite Color</label><input type="color" id="favColor" ><br>
+		<label>Likeness</label><input type="range" id="likeness" min="1" max="100">
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
